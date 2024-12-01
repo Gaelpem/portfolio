@@ -1,0 +1,248 @@
+/*
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*/
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#ececec;
+    font-family:'inter';
+    font-family: "Inter", sans-serif;
+    font-weight: 690;
+    color: rgb(0, 0, 0); 
+}
+
+.container{
+    margin :0 auto; 
+    width: 1370px;
+    height:1100px; 
+    /*border: 1px solid black;*/
+   
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding:2rem;
+}
+.rond{
+    background: rgba(149, 149, 149, 0.609);
+    top: 30rem;
+    left: 12rem;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+.rectangle{
+    width: 400px;
+    height: 200px;
+    background: rgba(149, 149, 149, 0.609);
+    border-radius: 7px;
+    position: absolute;
+    top: 24rem;
+    right: 9rem;
+}
+.nav-container{
+    width: 1290px;
+    height: 95px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+   /*border: 1px solid blue;*/
+}
+.residence{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+@keyframes exemple {
+    0%{
+        opacity: -2;
+     width : 0px; 
+    }
+    100%{
+        opacity: 2;
+        width : 1290px;
+        border: 0.6px solid black; 
+    }
+}
+.links{
+    width: 545px;
+   /* border:1px solid red ; */
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    /*border:2px solid black;*/
+    width: 17rem;
+    padding: 1rem;
+    margin-top:1.3rem;
+}
+
+ul li{
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    width: 5.6rem;
+    border:1px solid black;
+    height :25px; 
+    border-radius: 3px;
+    padding: 0 0.2rem;
+    transform: scale(1);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+ul li a:hover{
+    color:white; 
+    background:rgb(0, 0, 0); 
+    transform: scale(1.6);
+}
+.trait-horizontal1{
+    border:0.6px solid black; 
+    width: 1290px;
+    animation-name: exemple ;
+    animation-duration: 2s;
+    position: absolute;
+    top:8rem; 
+    animation-timing-function: ease;
+   animation-fill-mode: backwards;
+}
+.main{
+  position: absolute;
+  left: 3rem; 
+  /*border: 2px solid black;*/
+  width: 1280px;
+  top:10.2rem;
+  height: 600px; 
+
+}
+.titre{
+    /*border:1px solid black; */
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+.copyright{
+    position: absolute; 
+    font-size: 5rem;
+    top: 7.8rem; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.main h1{
+    margin-top: -1rem;
+    font-size: 11rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.para{
+    margin:-1rem 0; 
+    /*border:2px solid black; */
+    width:1200px;
+}
+.para h2, footer{
+    font-size: 3.6rem;
+    position: relative; 
+    animation: para 3s backwards;
+}
+@keyframes para {
+    0% {
+        opacity: -4;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity:1; 
+        transform: translateX(0);
+    }
+}
+
+.haut{
+position: absolute;
+top:-4rem; 
+}
+.grey{
+    color: rgb(98, 98, 98);
+}
+.projet-menu{
+    /*border : 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    height: 100px;
+    align-items: center;
+}
+.titre-projet{
+    font-size: 4rem;
+}
+.petit-numero{
+    font-size:1rem; 
+    font-weight:400; 
+
+}
+.carre{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+}
+.about-menu{
+    /*border : 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25rem;
+    height: 100px;
+    align-items: center;
+}
+.titre-about{
+    font-size: 4rem;
+}
+.contact-menu{
+    /*border : 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25rem;
+    height: 100px;
+    align-items: center;
+}
+.titre-contact{
+    font-size: 4rem;
+}
+
+footer{
+width: 400px;
+margin-top:1910px; 
+/*border:1px solid black;*/
+position:absolute; 
+padding: 2rem;
+right: 1rem;
+font-size: 2.5rem;
+display: flex;
+justify-content: center;
+}
+
