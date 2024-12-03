@@ -76,17 +76,7 @@ body{
   display: flex;
   align-items: center;
 }
-@keyframes exemple {
-    0%{
-        opacity: -2;
-     width : 0px; 
-    }
-    100%{
-        opacity: 2;
-        width : 1290px;
-        border: 0.6px solid black; 
-    }
-}
+
 .links{
     width: 545px;
    /* border:1px solid red ; */
@@ -125,15 +115,26 @@ ul li a:hover{
     transform: scale(1.6);
 }
 .trait-horizontal1{
-    border:0.6px solid black; 
-    width: 1290px;
-    animation-name: exemple ;
-    animation-duration: 2s;
-    position: absolute;
-    top:8rem; 
-    animation-timing-function: ease;
-   animation-fill-mode: backwards;
+   background-color: black;
+   width: 0;
+   height: 2px;
+   position: relative;
+   animation-name: slide2;
+   animation-duration: 3s;
+   animation-fill-mode: forwards;
 }
+@keyframes slide2{
+    0%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity:0.8; 
+        width: 100%;
+    }
+}
+
+
 .main{
   position: absolute;
   left: 3rem; 
@@ -170,17 +171,6 @@ ul li a:hover{
 .para h2, footer{
     font-size: 3.6rem;
     position: relative; 
-    animation: para 3s backwards;
-}
-@keyframes para {
-    0% {
-        opacity: -4;
-        transform: translateX(30px);
-    }
-    100%{
-        opacity:1; 
-        transform: translateX(0);
-    }
 }
 
 .haut{
