@@ -22,7 +22,7 @@
           </div>
           <hr/>
           <div class="about-menu">
-               <h2 class="titre-about">Ab-out<span    class="petit-numero">(002)<span></h2>
+               <h2 class="titre-about">Ab-out<span class="petit-numero">(002)<span></h2>
                <div class="carre"></div>
           </div>
           <hr/>

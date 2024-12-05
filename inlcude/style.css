@@ -64,7 +64,7 @@ body{
     right: 9rem;
 }
 .nav-container{
-    width: 1290px;
+    width: 1280px;
     height: 95px;
     display:flex;
     justify-content: space-between;
@@ -79,8 +79,10 @@ body{
 
 .links{
     display: flex;
-    gap:0.4rem
-   /* border:1px solid red ; */
+    gap:0.5rem; 
+    border-radius: 10px;
+    background-color: black;
+    padding: 0.4rem;
 }
 
 
@@ -90,7 +92,7 @@ body{
 
 .links a {
     text-decoration: none;
-    color: black;
+    color: #ececec;
     position: relative;
     font-weight: 400;
 }
@@ -102,7 +104,7 @@ body{
     height:1px; 
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color:#ececec;
     transition: width 0.7s;
 }
 .links a:hover::after{
