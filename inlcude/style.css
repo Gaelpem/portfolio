@@ -68,7 +68,7 @@ body{
     height: 95px;
     display:flex;
     justify-content: space-between;
-    flex-direction: row;
+  align-items: center;
    /*border: 1px solid blue;*/
 }
 .residence{
@@ -78,42 +78,43 @@ body{
 }
 
 .links{
-    width: 545px;
+    display: flex;
+    gap:0.4rem
    /* border:1px solid red ; */
 }
-ul{
-    display: flex;
-    justify-content: space-between;
-    /*border:2px solid black;*/
-    width: 17rem;
-    padding: 1rem;
-    margin-top:1.3rem;
+
+
+.links li{
+    list-style: none;
 }
 
-ul li{
-    margin: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.4rem;
-}
-
-ul li a {
+.links a {
     text-decoration: none;
     color: black;
-    width: 5.6rem;
-    border:1px solid black;
-    height :25px; 
-    border-radius: 3px;
-    padding: 0 0.2rem;
-    transform: scale(1);
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: relative;
+    font-weight: 400;
 }
-ul li a:hover{
-    color:white; 
-    background:rgb(0, 0, 0); 
-    transform: scale(1.6);
+
+.links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height:1px; 
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.7s;
 }
+.links a:hover::after{
+    width: 100%;
+}
+.links a:hover{
+    transform: translateX(10px); /* Lien se déplace légèrement */
+    transition: transform 0.3s ease;
+}
+
+
+
 .trait-horizontal1{
    background-color: black;
    width: 0;
