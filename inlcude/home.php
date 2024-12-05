@@ -5,6 +5,7 @@
     <div class="container">
         <div class="rond"></div>
      <div class="rectangle"></div>
+     
        <?php require "inc/nav.inc.php"; ?>
        
         <div class="main">
