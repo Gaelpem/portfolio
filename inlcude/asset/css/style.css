@@ -20,13 +20,11 @@
 }
 */
 
-html{
-    scroll-behavior: smooth;
-}
 *{
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+    scroll-behavior: smooth ;
 }
 
 body{
@@ -37,6 +35,8 @@ body{
     color: rgb(0, 0, 0); 
     display: flex;
     justify-content: center;
+    height: 100vh;
+
 }
 
 .container{
@@ -57,7 +57,7 @@ body{
     align-items: center;
 
 }
-.prenom-nom{
+.residence{
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -203,38 +203,27 @@ top:-4rem;
 .titre-about{
     font-size: 9rem;
 }
-.contact-menu{
-    /*background-color: black;*/
+#contact-menu{
+    background-color: black;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    margin-top: 25rem;
+    margin-top: 45rem;
+    margin-left:94px; 
     height: 600px;
-    width: 100%;
+    width: 96%; 
     align-items: center;
     position:relative;
+   
+    
 
 }
 .titre-contact{
-    background-color: black;
-    border-radius: 20px;
-    width: 1360px;
-    height: 700px;
-    font-size: 9rem;
-    color: white;
-    position:absolute;
-    top: 2rem;
-    left:5rem ;
-    position: relative;
-}
-.titre-contact::after{
-    content: "";
     position: absolute;
-    left: 0;
-    top: 9rem;
-    width: 1300px;
-    height: 1px;
-    background-color: white;
+    top: 1rem;
+    /*border:2px red solid;*/
+    font-size: 9rem;
+    color:white;
 }
 
 footer{
