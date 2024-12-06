@@ -17,13 +17,13 @@
               <h2><span class="haut">Hello,</span>
               <span class="grey">I'm a developer web,</span> passionate about tech and design<span class="grey"> that's why i choose</span> to mix this two world together.</h2>
           </div>  
-          <div class="projet-menu">
-               <h2 class="titre-projet">Pro-jects<span class="petit-numero">(001)<span></h2>
+          <div id="projet-menu">
+               <h2 class="titre-projet">[Pro-jects]<span class="petit-numero">(001)<span></h2>
                <div class="carre"></div>
           </div>
           <hr/>
-          <div class="about-menu">
-               <h2 class="titre-about">Ab-out<span class="petit-numero">(002)<span></h2>
+          <div id="about-menu">
+               <h2 class="titre-about">[Ab-out]<span class="petit-numero">(002)<span></h2>
                <div class="carre"></div>
           </div>
           <hr/>

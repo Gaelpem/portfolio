@@ -19,62 +19,50 @@
   font-style: normal;
 }
 */
+
+html{
+    scroll-behavior: smooth;
+}
 *{
-    padding: 0; 
     margin: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
 body{
-    background-color:#ececec;
+    background-color:#ffffff;
     font-family:'inter';
     font-family: "Inter", sans-serif;
     font-weight: 690;
     color: rgb(0, 0, 0); 
+    display: flex;
+    justify-content: center;
 }
 
 .container{
-    margin :0 auto; 
-    width: 1370px;
-    height:1100px; 
+    width: 100%;
+    height:1000px; 
     /*border: 1px solid black;*/
-   
     display: flex;
     justify-content: center;
     position: relative;
-    padding:2rem;
+    padding:1.5rem;
 }
-.rond{
-    background: rgba(149, 149, 149, 0.609);
-    top: 30rem;
-    left: 12rem;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
 
-}
-.rectangle{
-    width: 400px;
-    height: 200px;
-    background: rgba(149, 149, 149, 0.609);
-    border-radius: 7px;
-    position: absolute;
-    top: 24rem;
-    right: 9rem;
-}
 .nav-container{
-    width: 1280px;
+    width: 100%;
     height: 95px;
     display:flex;
     justify-content: space-between;
-  align-items: center;
-   /*border: 1px solid blue;*/
+    align-items: center;
+
 }
-.residence{
+.prenom-nom{
   font-size: 2rem;
   display: flex;
   align-items: center;
+  font-weight: 300;
+  
 }
 
 .links{
@@ -94,7 +82,7 @@ body{
     text-decoration: none;
     color: #ececec;
     position: relative;
-    font-weight: 400;
+   font-weight: 500; 
 }
 
 .links a::after{
@@ -120,10 +108,10 @@ body{
 .trait-horizontal1{
    background-color: black;
    width: 0;
-   height: 2px;
+   height: 1px;
    position: relative;
    animation-name: slide2;
-   animation-duration: 3s;
+   animation-duration: 2s;
    animation-fill-mode: forwards;
 }
 @keyframes slide2{
@@ -142,7 +130,7 @@ body{
   position: absolute;
   left: 3rem; 
   /*border: 2px solid black;*/
-  width: 1280px;
+  width: 95%;
   top:10.2rem;
   height: 600px; 
 
@@ -183,7 +171,7 @@ top:-4rem;
 .grey{
     color: rgb(98, 98, 98);
 }
-.projet-menu{
+#projet-menu{
     /*border : 1px solid green; */
     display: flex;
     justify-content: space-between;
@@ -192,7 +180,7 @@ top:-4rem;
     align-items: center;
 }
 .titre-projet{
-    font-size: 4rem;
+    font-size: 9rem;
 }
 .petit-numero{
     font-size:1rem; 
@@ -204,7 +192,7 @@ top:-4rem;
     height: 40px;
     width: 40px;
 }
-.about-menu{
+#about-menu{
     /*border : 1px solid green; */
     display: flex;
     justify-content: space-between;
@@ -213,23 +201,45 @@ top:-4rem;
     align-items: center;
 }
 .titre-about{
-    font-size: 4rem;
+    font-size: 9rem;
 }
 .contact-menu{
-    /*border : 1px solid green; */
+    /*background-color: black;*/
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     margin-top: 25rem;
-    height: 100px;
+    height: 600px;
+    width: 100%;
     align-items: center;
+    position:relative;
+
 }
 .titre-contact{
-    font-size: 4rem;
+    background-color: black;
+    border-radius: 20px;
+    width: 1360px;
+    height: 700px;
+    font-size: 9rem;
+    color: white;
+    position:absolute;
+    top: 2rem;
+    left:5rem ;
+    position: relative;
+}
+.titre-contact::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9rem;
+    width: 1300px;
+    height: 1px;
+    background-color: white;
 }
 
 footer{
 width: 400px;
-margin-top:1910px; 
+margin-top:400px; 
 /*border:1px solid black;*/
 position:absolute; 
 padding: 2rem;
