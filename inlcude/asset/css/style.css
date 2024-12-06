@@ -225,7 +225,27 @@ top:-4rem;
     font-size: 9rem;
     color:white;
 }
-
+form{
+    margin-left: 50rem;
+    margin-top: 3rem;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label {
+    color: white;
+    font-size: 3rem;
+}
+input{
+color:white; 
+ height: 2rem;
+ width: 100%;
+ background-color: black;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: 1px solid white;
+}
 footer{
 width: 400px;
 margin-top:400px; 
