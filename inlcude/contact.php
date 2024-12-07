@@ -2,11 +2,9 @@
     <h2 class="titre-contact">[Conta-ct]</h2>
      <form action="">
       <label for="nom">Name:</label>
-      <input type="text" name="name" id="nom">
-      <label for="surname">Surname:</label>
-      <input type="text" name="prenom" id="surname">
+      <input type="text" name="name" id="nom" placeholder="Louis">
       <label for="mail">Email:</label>
-      <input type="email" name="email" id="mail">
+      <input type="email" name="email" id="mail" placeholder="exemple@gmail.com">
      </form>
 
 </div>

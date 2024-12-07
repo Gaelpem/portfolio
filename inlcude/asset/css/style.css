@@ -209,7 +209,7 @@ top:-4rem;
     display: flex;
     justify-content: space-between;
     margin-top: 45rem;
-    margin-left:94px; 
+    margin-left:90px; 
     height: 600px;
     width: 96%; 
     align-items: center;
@@ -237,15 +237,20 @@ form label {
     font-size: 3rem;
 }
 input{
-color:white; 
+ color:white; 
  height: 2rem;
  width: 100%;
  background-color: black;
  border-top: none;
  border-left: none;
  border-right: none;
+ font-size: 2rem; 
+ padding:2rem 0; 
  border-bottom: 1px solid white;
 }
+input:focus, textarea:focus, button:focus {
+    outline: none; /* Supprime le contour */
+  }
 footer{
 width: 400px;
 margin-top:400px; 
