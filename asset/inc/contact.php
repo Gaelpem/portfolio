@@ -8,4 +8,5 @@
      </form>
 
 </div>
-          <?php require_once "inc/footer.inc.php"; ?>
+
+
