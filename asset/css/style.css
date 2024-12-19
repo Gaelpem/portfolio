@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 */
 
 /*
@@ -141,12 +140,16 @@ main{
   top:10.2rem;
   height: 1000px; 
 
-}.logo{
-position:absolute; 
-right:22rem;   
+}
+.logo{
+position:relative; 
 }
 .logo img{
-    width: 400%;
+    width: 100%;
+    position: absolute;
+    left:33rem; 
+    top: -60rem;
+    z-index: -1;
 }
 
 .form1{
@@ -165,8 +168,8 @@ right:22rem;
     border-top: none;
     border-left:none; 
     position: absolute;
-    left:47rem; 
-    top: 30rem;
+    left:49rem; 
+    top: 31rem;
 }
 
 main h1{
@@ -182,6 +185,7 @@ main h1{
     width:920px;
     margin-top:18rem; 
     padding: 1rem;
+    margin-left:1rem;
    
 }
 
@@ -193,32 +197,42 @@ main h1{
 .salut{
 font-size: 9rem;
 position: absolute;
-top:-10rem; 
+top:-11.5rem; 
 }
 .grey{
     color: rgb(98, 98, 98);
 }
 #projet-menu{
-    /*border : 1px solid green; */
+    border : 1px solid green; 
     display: flex;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 9rem;
     height: 100px;
     align-items: center;
+    position:relative; 
+    
 }
 .titre-projet{
     font-size: 9rem;
+    position:relative;     
 }
-.petit-numero{
+
+.trait-horizontal2{
+    position: absolute;
+    top: 8rem;
+    background-color: black;
+    width: 95%;
+    height: 1px;
+    top:7rem; 
+}
+
+.petit-numero1{
+    position: absolute;
     font-size:1rem; 
     font-weight:400; 
 
 }
-.carre{
-    background-color: black;
-    height: 15px;
-    width: 15px;
-}
+
 #about-menu{
     /*border : 1px solid green; */
     display: flex;
