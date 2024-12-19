@@ -1,5 +1,5 @@
 <div class="nav-container">
-    <ul class="home">
+    <ul class="link_home">
         <li><a href="+">Home</a></li>
     </ul>
             <div class="residence">
