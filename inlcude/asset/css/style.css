@@ -28,7 +28,7 @@
 }
 
 body{
-    background-color:#ffffff;
+    background-color:rgb(255, 255, 255); 
     font-family:'inter';
     font-family: "Inter", sans-serif;
     font-weight: 690;
@@ -126,7 +126,7 @@ body{
 }
 
 
-.main{
+main{
   position: absolute;
   left: 3rem; 
   /*border: 2px solid black;*/
@@ -135,19 +135,14 @@ body{
   height: 600px; 
 
 }
-.titre{
-    /*border:1px solid black; */
-    width: 1200px;
-    height: 300px;
-    position: relative;
-}
+
 .copyright{
     position: absolute; 
     font-size: 5rem;
     top: 7.8rem; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
-.main h1{
+main h1{
     margin-top: -1rem;
     font-size: 11rem;
     font-family: "Anton", sans-serif;
@@ -158,15 +153,17 @@ body{
     margin:-1rem 0; 
     /*border:2px solid black; */
     width:1200px;
+    margin-top:7rem; 
 }
 .para h2, footer{
     font-size: 3.6rem;
     position: relative; 
 }
 
-.haut{
+.salut{
+font-size: 5rem;
 position: absolute;
-top:-4rem; 
+top:-5rem; 
 }
 .grey{
     color: rgb(98, 98, 98);

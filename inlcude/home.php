@@ -8,14 +8,12 @@
      
        <?php require "inc/nav.inc.php"; ?>
        
-        <div class="main">
+        <main>
         <div class="trait-horizontal1"></div>
-            <div class="titre">
-                <h1>Gaël Pembele<span class="copyright">&copy;</span></h1>
-           </div>
+          
            <div class="para">
-              <h2><span class="haut">Hello,</span>
-              <span class="grey">I'm a developer web,</span> passionate about tech and design<span class="grey"> that's why i choose</span> to mix this two world together.</h2>
+              <h2><span class="salut">Salut,</span>
+              Je m'appelle Gaël Pembele, je suis un apprenti développeur, passioné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces due univers ensemble.</h2>
           </div>  
           <div id="projet-menu">
                <h2 class="titre-projet">[Pro-jects]<span class="petit-numero">(001)<span></h2>
@@ -28,6 +26,6 @@
           </div>
           <hr/>
           <?php require "contact.php"; ?>
-        </div>
+     </main >
         
         <?php require_once "inc/footer.inc.php"; ?>
