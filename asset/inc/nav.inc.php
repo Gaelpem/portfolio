@@ -1,13 +1,19 @@
-<div class="nav-container">
-    <ul class="link_home">
-        <li><a href="+">Home</a></li>
-    </ul>
-            <div class="residence">
-                <p>paris,France</p>
-            </div>
+<header>
+
+    <div class="navbar">
+      
+       <ul class="link_home">
+        <li><a href="#accueil-menu">Accueil</a></li> 
+        </ul>
+        <div class="logo">
+           <img src="asset/img/logo.svg" alt="">
+        </div>
+         
                 <ul class="links">
-                    <li><a href="#projet-menu">Projects</a></li>
-                    <li><a href="#about-menu">/ About</a></li>
+                    <li><a href="#projet-menu">Projets</a></li>
+                    <li><a href="#about-menu">/ À propos</a></li>
                     <li><a href="#contact-menu">/ Contact</a></li>
                </ul>
-   </div>
+    </div> 
+    <div class="trait-horizontal_1"></div>       
+</header>
