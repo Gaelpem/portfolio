@@ -142,10 +142,10 @@ body{
 }
 main{
     position:absolute; 
-    /*border: 2px solid blue;*/
+    border: 2px solid blue;
     width: 100%;
     max-width: 1500px;
-    margin-top: 10rem;
+    margin-top: 8rem;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -160,9 +160,9 @@ main{
     height: 750px;
     max-width: 1520px;
     border-radius:15px; 
-    position: relative;
+    position: absolute;
     padding: 1rem;
-    border: 2px solid gre;
+    border: 2px solid rgb(0, 189, 135);
     
 }
 
@@ -222,7 +222,7 @@ section{
     top: 3rem;
     left: 6rem;
 }
-.paragraphe{
+.paragraphe1{
     width: 100%; 
     max-width: 900px;
     margin-left: 7rem;
@@ -267,13 +267,13 @@ section{
     font-size:1.4rem;
 }
 
-#projet-menu{
+#projet-menu {
     position: relative;
-    margin-top: 8rem;
+    margin-top: 100rem;
     /*border: 2px solid yellow;*/
 }
 
-.container-projet h1{
+.projet-container h1{
     font-size: 7rem;
     position: absolute;
     left: -2rem;
@@ -304,3 +304,52 @@ section{
     left: 26rem;
 }
 
+#projet-about{
+    position: relative;
+    margin-top: 50rem;
+    /*border: 2px solid yellow;*/
+}
+
+.titre-about{
+    font-size: 7rem;
+    position: absolute;
+    left: -2rem;
+     border: 2px solid red; 
+}
+
+.number02{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.trait-horizontal5{
+    position: absolute;
+    top:7.2rem; 
+    width:1487px;
+    background-color: black;
+    height: 1px;
+    left: -1rem;
+    
+}
+
+.grid{
+ position:absolute; 
+ background-color:#000000;
+ opacity: 0.7;
+ width: 100%;
+ height: 600px;
+ top: 10rem;  
+ border-radius:15px; 
+ display:grid;
+ grid-template-columns: 350px 350px;
+
+}
+
+.paragraphe{
+    margin-top:2rem; 
+    color:white; 
+    font-size: 1.5rem; 
+    font-weight: 200;
+    margin-left:2rem ;
+    border:1px solid red; 
+}

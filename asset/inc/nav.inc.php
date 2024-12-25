@@ -11,7 +11,7 @@
          
                 <ul class="links">
                     <li><a href="#projet-menu">Projets</a></li>
-                    <li><a href="#about-menu">/ À propos</a></li>
+                    <li><a href="#projet-about">/ À propos</a></li>
                     <li><a href="#contact-menu">/ Contact</a></li>
                </ul>
     </div> 
