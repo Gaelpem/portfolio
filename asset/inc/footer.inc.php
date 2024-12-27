@@ -1,22 +1,24 @@
 
 <footer>
 <section class="footer-container">
-    <ul class="social">
-        <li><a href="">Social</a></li>
+    <div class="social-lieu"> 
+     <ul class="social">
+        <li><a href=""><span class="grand-titre">Social</span></a></li>
         <li><a href="https://www.instagram.com/whvshinngtonn/">instagram</a></li>
         <li><a href="">Linkedin</a></li>
         <li><a href="">Github</a></li>
-    </ul>
- <div class="lieu">
-    <p>Lieu</p>
-    <p>Paris,</p>
-    <p>France</p>
- </div>
+     </ul>
+      <div class="lieu">
+             <p><span class="grand-titre">Lieu</span></p>
+             <p>Paris,</p>
+             <p>France</p>
+     </div>
 
-    </ul>
+     </div>
+
 
     <div class="logo-blanc">
-     <img src="asset/img/logo-blanc.png" alt="">
+
     </div>
 
   <div class="droit">

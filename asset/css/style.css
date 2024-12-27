@@ -29,14 +29,13 @@
 
 
 body{
-    height: 100%;
     font-weight: 690;
-    color: rgb(0, 0, 0); 
+
     display: flex;
     justify-content: center;
     background: rgb(255, 255, 255);
     position: relative;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0
     
@@ -156,7 +155,7 @@ main{
 .container1{
     margin-top: -4rem;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.772);  
+    background-color:rgba(0, 0, 0, 0.688);
     height: 750px;
     max-width: 1520px;
     border-radius:15px; 
@@ -269,7 +268,7 @@ section{
 
 #projet-menu {
     position: relative;
-    margin-top: 260rem;
+    margin-top: 290rem;
     /*border: 2px solid yellow;*/
 }
 
@@ -295,7 +294,7 @@ section{
 
 .photos{
     position: absolute;
-    background-color:rgba(0, 0, 0, 0.772); 
+    background-color:rgba(0, 0, 0, 0.688);
     border-radius: 15px;
      top: 10rem;
     width: 700px;
@@ -356,7 +355,7 @@ section{
 
 .grid{
  position:absolute; 
- background-color:rgba(0, 0, 0, 0.772); 
+ background-color:rgba(0, 0, 0, 0.688);
  width: 100%; 
  max-width: 1200px;
  height: 650px;
@@ -415,7 +414,7 @@ text-decoration: none;
 position: relative;
 margin-top:60rem; 
 width: 90%;
-background-color:rgba(0, 0, 0, 0.772);
+background-color:rgba(0, 0, 0, 0.688);
 border-radius:20px; 
 height: 800px;
 min-height: 800px;
@@ -446,7 +445,7 @@ display: flex;
 }
 .contact-mini{
     position: absolute;
-    background-color:rgba(0, 0, 0, 0.711); 
+    background-color:rgba(0, 0, 0, 0.688);
     height:550px;
     width: 80%;
     top: 10rem;
@@ -527,7 +526,7 @@ form button{
     font-size: 1rem; 
     font-weight: 500;
     margin-top:1rem; 
-    background-color:rgba(117, 117, 117, 0.772);
+    background-color:rgba(0, 0, 0, 0.688);
     color:white;
     border-radius: 8px;
 
@@ -570,15 +569,16 @@ form button{
 .menu-block{
 
     width: 100%;
+    max-width: 1720px;
     height: 460px;
-    background-color:rgba(0, 0, 0, 0.772);
+    background-color:rgba(0, 0, 0, 0.688);
     border-radius: 15px;
 }
 .links-block{
-    width: 60%;
+    width: 100%;
     position: absolute;
     /*border:2px solid red;*/
-    top: 17rem;
+    top: 13.8rem;
     left: 30rem;
 }
 
@@ -621,14 +621,14 @@ form button{
 footer{
    position: relative;
    margin-top: 10rem;
-   background-color:rgba(0, 0, 0, 0.772);
+   background-color:rgba(0, 0, 0, 0.688);
    width: 100%;
-   height: 200px;
    border-radius:15px;
    margin-bottom: 0.1rem;
    display: flex;
    align-items: center;
    justify-content: center;
+   min-height: 122px;
 }
 
 .footer-container{
@@ -636,22 +636,37 @@ footer{
     justify-content:space-between;
     border: 1px solid green;
     width: 100%;
-    max-width: 1300px;
     height: 90px;
 
   
 }
-.footer-container .logo-blanc{
-    border:1px solid red;
-    top: -4rem;
-    height: 200px;
+
+
+.social-lieu{
     display: flex;
-    justify-content: center;
-    position: relative;
-
-
+    justify-content: space-between;
+    border: 1px solid rgb(9, 40, 63);
+    width: 300px;
 }
- .logo-blanc img{
-    width: 100%;
+.social-lieu ul li{
+    list-style-type:none;
+}
+.social-lieu ul li a{
+    text-decoration: none;
+    color:white; 
+    font-size:0.7rem; 
 }
 
+
+
+
+
+
+.grand-titre{
+    font-size: 2.4rem;
+}
+
+.droit > p{
+    font-size:2rem; 
+    color:white; 
+}
