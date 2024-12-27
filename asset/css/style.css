@@ -27,14 +27,19 @@
     font-family: "Inter", sans-serif;
 }
 
+
 body{
-    height: 100vh;
+    height: 100%;
     font-weight: 690;
     color: rgb(0, 0, 0); 
     display: flex;
     justify-content: center;
     background: rgb(255, 255, 255);
     position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0
+    
 
 }
 
@@ -47,7 +52,7 @@ body{
    width: 100%;
    position: absolute;
    left: 5rem;
-   top: -1rem;
+   top: -1rem; 
 }
 
 
@@ -113,6 +118,7 @@ body{
    position: relative;
    top:3rem; 
    width: 100%;
+   z-index: 1;
 }
 
 .text{
@@ -121,15 +127,6 @@ body{
     gap: 1rem;
 }
  
-.trait-horizontal_1{
-    margin-top:0.7rem; 
-    width:100%;
-    max-width: 1490px;
-    background-color: black;
-    height: 1px;
-    margin-left: 6rem;
-    
-}
 
 .navbar{
     width: 100%;
@@ -138,41 +135,44 @@ body{
     margin: 0 auto;
     display: flex; 
     justify-content: space-between;
-   /* border: 2px solid black;*/
+    /*border: 2px solid black;*/
 }
+
+
+
 main{
     position:absolute; 
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     width: 100%;
     max-width: 1500px;
-    margin-top: 8rem;
+    margin-top: 3.4rem;
     height: 100vh;
     display:flex;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .container1{
     margin-top: -4rem;
     width: 100%;
-    background-color:#000000;
-    opacity: 0.7;
+    background-color:rgba(0, 0, 0, 0.772);  
     height: 750px;
     max-width: 1520px;
     border-radius:15px; 
     position: absolute;
     padding: 1rem;
-    border: 2px solid rgb(0, 189, 135);
+   /* border: 2px solid rgb(0, 189, 135);*/
     
 }
 
 .titre-portfolio{
     position:absolute; 
-    color:rgba(255, 255, 255, 0.134); 
+    color:rgba(255, 255, 255, 0.164); 
     font-size: 15.7rem;
     top:11.2rem;  
     left:3.3rem; 
-    z-index: -1;
+   
 }
 
 .copyright{
@@ -269,7 +269,7 @@ section{
 
 #projet-menu {
     position: relative;
-    margin-top: 100rem;
+    margin-top: 260rem;
     /*border: 2px solid yellow;*/
 }
 
@@ -295,8 +295,7 @@ section{
 
 .photos{
     position: absolute;
-    background-color:#000000;
-    opacity: 0.7;
+    background-color:rgba(0, 0, 0, 0.772); 
     border-radius: 15px;
      top: 10rem;
     width: 700px;
@@ -314,7 +313,7 @@ section{
     font-size: 7rem;
     position: absolute;
     left: -2rem;
-     border: 2px solid red; 
+     /*border: 2px solid red; */
 }
 
 .number02{
@@ -329,27 +328,330 @@ section{
     background-color: black;
     height: 1px;
     left: -1rem;
-    
 }
+
+.trait-horizontal5::after{
+    content: "";
+    left: 8rem;
+    position:absolute;
+    top: 8rem; 
+    width: 30px;
+    height: 30px;
+    border-top:1px solid white ;
+    border-left:1px solid white;
+    z-index: 2;
+}
+.trait-horizontal5::before{
+    content: "";
+    left: 67rem;
+    position:absolute;
+    top: 37.5rem; 
+    width: 30px;
+    height: 30px;
+    border-right:1px solid white ;
+    border-bottom:1px solid white;
+    z-index: 2;
+}
+
 
 .grid{
  position:absolute; 
- background-color:#000000;
- opacity: 0.7;
- width: 100%;
- height: 600px;
+ background-color:rgba(0, 0, 0, 0.772); 
+ width: 100%; 
+ max-width: 1200px;
+ height: 650px;
  top: 10rem;  
  border-radius:15px; 
  display:grid;
- grid-template-columns: 350px 350px;
+ grid-template-columns:repeat(2,400px); 
+ justify-content:center;
+ align-content: center;
+ column-gap: 70px;
 
 }
 
 .paragraphe{
-    margin-top:2rem; 
+    border-top: 0.5px solid white;
+    width: 400px;
+    margin-top:6rem; 
     color:white; 
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
     font-weight: 200;
-    margin-left:2rem ;
-    border:1px solid red; 
+    padding-top: 1rem;
 }
+.skills-grid{
+    display: grid;
+    grid-template-columns: 100px 100px ;
+    gap: 10px;
+    font-size: 1rem;
+    padding-top:0.7rem;
+}
+
+.skills .web{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top:1rem;  
+
+}
+#projet-about ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    list-style: none;
+}
+.cv li{
+text-decoration: none;
+ }
+.cv a{
+   color: white;  
+   text-decoration: none; 
+}
+
+#contact-menu{
+position: relative;
+margin-top:60rem; 
+width: 90%;
+background-color:rgba(0, 0, 0, 0.772);
+border-radius:20px; 
+height: 800px;
+min-height: 800px;
+overflow: visible;
+display: flex;
+
+}
+
+#contact-menu h1{
+    font-size: 7rem;
+    color: white;
+    top: 2rem;
+}
+ .number03{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.number03::after{
+   position: absolute;
+   content:"";
+   width: 1300px;
+   height: 1px;
+   background-color: white;
+   top: 7rem;
+   left: -33rem;
+
+}
+.contact-mini{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.711); 
+    height:550px;
+    width: 80%;
+    top: 10rem;
+    z-index: 3;
+    right: 0;
+    border-radius: 15px;
+}
+.contact-mini p{
+    color:white;
+    width: 350px; 
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 7rem;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    margin-left: 4rem;   
+}
+
+.contact-mini::after{
+    position:absolute; 
+    content: "";
+    width:25px;
+    height: 25px;
+    border-top:1px solid white;
+    border-left: 1px solid white;
+    top: 4rem;
+    left: 3rem;
+}
+.contact-mini::before{
+    position:absolute; 
+    content: "";
+    width:25px;
+    height: 25px;
+    border-bottom:1px solid white;
+    border-right: 1px solid white;
+    top: 20rem;
+    left:   24.5rem;
+}
+
+
+
+form{
+    margin-left: 30rem;
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+form label{
+    color:white; 
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-top: 0.7rem ;
+ }
+form input{
+   background: none;
+   border: none;
+   border-bottom: 1px solid white;
+   font-size: 1.5rem;
+   margin-top: 0.1rem;
+   padding-top: 0.7rem ;
+   color:white; 
+   padding-bottom: 1rem;
+}
+
+form input:focus{
+
+    outline: none;
+    background:none; /* Assure la suppression de l'effet par défaut */
+}
+
+
+form button{
+    border:none; 
+    width:150px; 
+    height:37px;
+    font-size: 1rem; 
+    font-weight: 500;
+    margin-top:1rem; 
+    background-color:rgba(117, 117, 117, 0.772);
+    color:white;
+    border-radius: 8px;
+
+}
+
+.reseau{
+  /*border:1px solid green; */
+  width: 100%;
+  max-width: 510px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin:40rem 0 0 -13.3rem;
+  z-index: 10;
+}
+.reseau li{
+    list-style: none;
+}
+.reseau li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.menu{
+    position: relative;
+    margin-top: 15rem;
+    max-width: 1200px;
+}
+.menu h1{
+   font-size: 7rem;
+}
+.number04{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+.menu-block{
+
+    width: 100%;
+    height: 460px;
+    background-color:rgba(0, 0, 0, 0.772);
+    border-radius: 15px;
+}
+.links-block{
+    width: 60%;
+    position: absolute;
+    /*border:2px solid red;*/
+    top: 17rem;
+    left: 30rem;
+}
+
+
+.links-block li{
+    list-style-type:none;
+}
+.links-block li::after{
+   position:absolute; 
+   content:"";
+   height:0.4px; 
+   width: 670px;
+   background-color: white;
+   left:1rem; 
+   margin-top: 3.5rem;
+}
+
+.links-block li::before{
+    position:absolute; 
+    content:"";
+    height:10px; 
+    width: 10px;
+    background-color: white;
+    left:42.2rem; 
+    margin-top: 2.2rem;
+ }
+.links-block li a{
+    text-decoration: none;
+    color:white; 
+    font-size: 3.5rem;
+}
+.numero{
+    
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 200;
+
+}
+
+footer{
+   position: relative;
+   margin-top: 10rem;
+   background-color:rgba(0, 0, 0, 0.772);
+   width: 100%;
+   height: 200px;
+   border-radius:15px;
+   margin-bottom: 0.1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-container{
+    display: flex;
+    justify-content:space-between;
+    border: 1px solid green;
+    width: 100%;
+    max-width: 1300px;
+    height: 90px;
+
+  
+}
+.footer-container .logo-blanc{
+    border:1px solid red;
+    top: -4rem;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+ .logo-blanc img{
+    width: 100%;
+}
+
